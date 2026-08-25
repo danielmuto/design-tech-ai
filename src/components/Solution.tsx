@@ -1,6 +1,6 @@
 import { Eyebrow, Section, SectionTitle } from "./Section";
-import { ImagePlaceholder } from "./ImagePlaceholder";
 import { Reveal } from "./Reveal";
+import solutionArtworkAsset from "@/assets/ideia-flux-solucao.jpg.asset.json";
 
 const flow = ["Ideia", "Estratégia", "Design", "Tecnologia"];
 
@@ -48,10 +48,11 @@ export function Solution() {
 
         <Reveal delay={360}>
           <div className="mt-14">
-            <ImagePlaceholder
-              id="idea-to-digital-experience"
-              label="Composição — ideia virando produto digital"
-              ratio="16/9"
+            <img
+              src={solutionArtworkAsset.url}
+              alt="Composição visual de uma ideia se transformando em produto digital com design, código e tecnologia"
+              loading="lazy"
+              className="aspect-video w-full rounded-2xl border border-line-dark object-cover"
             />
           </div>
         </Reveal>
