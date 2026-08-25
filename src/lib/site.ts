@@ -7,10 +7,11 @@ export const site = {
   role: "Web Designer",
   tagline: "Design. Tecnologia. Ideias que ganham vida.",
 
-  // TODO: substituir pelo número real com código do país (ex.: "5511999999999")
-  whatsappNumber: "5511999999999",
+  // Número real do WhatsApp com código do país (55) + DDD (51) + número
+  whatsappNumber: "5551996759745",
   whatsappMessage:
-    "Olá Daniel! Vi seu site e gostaria de conversar sobre um projeto.",
+    "Oi, Daniel! Tudo bem? Gostaria de saber mais sobre como as soluções com IA podem ajudar o meu negócio. Pode me contar um pouco sobre como funciona?",
+
 
   // TODO: substituir pelos perfis reais
   instagramUrl: "https://instagram.com/",
