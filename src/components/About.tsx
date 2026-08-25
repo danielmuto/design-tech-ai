@@ -1,6 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
 import { Eyebrow, Section, SectionTitle } from "./Section";
-import { ImagePlaceholder } from "./ImagePlaceholder";
 import { Reveal } from "./Reveal";
 import { whatsappUrl } from "@/lib/site";
 import danielPortraitAsset from "@/assets/daniel-muto-perfil.jpg.asset.json";

@@ -1,5 +1,4 @@
 import { Eyebrow, Section, SectionTitle } from "./Section";
-import { ImagePlaceholder } from "./ImagePlaceholder";
 import { Reveal } from "./Reveal";
 import solutionArtworkAsset from "@/assets/ideia-flux-solucao.jpg.asset.json";
 
