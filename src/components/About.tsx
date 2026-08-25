@@ -3,6 +3,7 @@ import { Eyebrow, Section, SectionTitle } from "./Section";
 import { ImagePlaceholder } from "./ImagePlaceholder";
 import { Reveal } from "./Reveal";
 import { whatsappUrl } from "@/lib/site";
+import danielPortraitAsset from "@/assets/daniel-muto-perfil.jpg.asset.json";
 
 export function About() {
   return (
@@ -21,9 +22,18 @@ export function About() {
           </Reveal>
           <Reveal delay={280}>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink-soft">
-              Meu trabalho une design, tecnologia e estratégia para criar
+              Tenho mais de 10 anos de experiência como designer e Web
+              Designer, unindo design, tecnologia e estratégia para criar
               soluções que façam sentido para o negócio e para as pessoas que
               vão utilizá-las.
+            </p>
+          </Reveal>
+          <Reveal delay={320}>
+            <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink-soft">
+              Nos últimos três anos, tenho me dedicado ao estudo da Inteligência
+              Artificial para oferecer as melhores soluções a empresas locais —
+              das redes sociais à criação de sites, aplicativos e outras
+              experiências digitais.
             </p>
           </Reveal>
           <Reveal delay={360}>
@@ -41,16 +51,12 @@ export function About() {
           </Reveal>
         </div>
 
-        {/* FOTO DO DANIEL — substituir pela fotografia real (3:4, vertical):
-            <img src="/images/daniel.webp" alt="Daniel Muto, Web Designer"
-                 className="aspect-[3/4] w-full rounded-2xl object-cover" /> */}
         <Reveal delay={240}>
-          <ImagePlaceholder
-            id="daniel-portrait"
-            label="Foto profissional do Daniel"
-            ratio="3/4"
-            tone="light"
-            className="mx-auto max-w-sm shadow-[0_40px_80px_-40px_oklch(0.212_0.042_247.8/35%)]"
+          <img
+            src={danielPortraitAsset.url}
+            alt="Daniel Muto, Web Designer"
+            loading="lazy"
+            className="mx-auto aspect-[3/4] w-full max-w-sm rounded-2xl object-cover shadow-[0_40px_80px_-40px_oklch(0.212_0.042_247.8/35%)]"
           />
         </Reveal>
       </div>
