@@ -1,6 +1,7 @@
 import { Eyebrow, Section, SectionTitle } from "./Section";
-import { ImagePlaceholder } from "./ImagePlaceholder";
+import aiImageAsset from "@/assets/ai-section-composicao.jpg.asset.json";
 import { Reveal } from "./Reveal";
+
 
 const flow = ["Ideia", "IA", "Design", "Produto"];
 
@@ -51,14 +52,15 @@ export function AiSection() {
         <Reveal delay={260}>
           <div className="relative">
             <div aria-hidden="true" className="glow-mint absolute -inset-8 rounded-full opacity-40 blur-2xl" />
-            <ImagePlaceholder
-              id="ai-digital-creation"
-              label="Composição — IA, interfaces, código e design"
-              ratio="16/9"
-              className="relative"
+            <img
+              src={aiImageAsset.url}
+              alt="Composição visual de IA, interfaces, código e design conectando ideias em soluções digitais"
+              className="relative aspect-video w-full rounded-2xl border border-line-dark object-cover shadow-2xl"
+              loading="lazy"
             />
           </div>
         </Reveal>
+
       </div>
     </Section>
   );
