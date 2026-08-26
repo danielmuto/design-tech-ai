@@ -1,5 +1,5 @@
 import { Eyebrow, Section, SectionTitle } from "./Section";
-import { ImagePlaceholder } from "./ImagePlaceholder";
+import problemaAsset from "../assets/problema-hamburgueria.jpg.asset.json";
 import { Reveal } from "./Reveal";
 
 export function Problem() {
@@ -25,11 +25,11 @@ export function Problem() {
         </div>
 
         <Reveal delay={200}>
-          <ImagePlaceholder
-            id="problem-digital-presence"
-            label="Imagem — presença digital"
-            ratio="4/3"
-            tone="light"
+          <img
+            src={problemaAsset.url}
+            alt="Presença digital de uma hamburgueria artesanal: loja física e site responsivo"
+            className="aspect-[4/3] w-full rounded-2xl border border-line-light object-cover"
+            loading="lazy"
           />
         </Reveal>
       </div>
