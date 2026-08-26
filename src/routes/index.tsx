@@ -80,8 +80,8 @@ function Index() {
         <About />
         <Process />
         <ForWhom />
-        <Testimonials />
         <Faq />
+
         <FinalCta />
       </main>
       <Footer />
