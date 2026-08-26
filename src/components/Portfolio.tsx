@@ -1,69 +1,72 @@
 import { ArrowUpRight } from "lucide-react";
 import { Eyebrow, Section, SectionTitle } from "./Section";
-import { ImagePlaceholder } from "./ImagePlaceholder";
 import { Reveal } from "./Reveal";
 import { cn } from "@/lib/utils";
+import williamImg from "@/assets/site-william.png.asset.json";
+import veconImg from "@/assets/site-vecon.png.asset.json";
+import feilmutoImg from "@/assets/site-feilmuto.png.asset.json";
+import actoreImg from "@/assets/site-actore.png.asset.json";
+import cadoreikiImg from "@/assets/site-cadoreiki.png.asset.json";
+import aquibaratoImg from "@/assets/plataforma-aquibarato.png.asset.json";
 
 /**
- * PORTFÓLIO — para adicionar um projeto real, edite o array abaixo:
- * troque `imageId` por uma <img /> no PortfolioCard (ou adicione um campo
- * `imageUrl` e renderize condicionalmente). Nome, categoria, descrição,
- * URL e tecnologias ficam centralizados aqui.
+ * PORTFÓLIO — projetos reais. Para adicionar um novo, faça upload da imagem
+ * como asset e adicione um item ao array abaixo.
  */
 const projects = [
   {
-    name: "Nome do Projeto",
+    name: "William Paganelli",
     category: "Site Institucional",
     description:
-      "Experiência digital desenvolvida para apresentar uma marca de forma profissional.",
-    ratio: "16/10" as const,
-    url: "#",
-    technologies: ["Design", "Desenvolvimento"],
+      "Site institucional e autoridade digital desenvolvido para destacar a trajetória, palestras e conteúdos de alta performance corporativa.",
+    image: williamImg.url,
+    url: "https://williampaganelli.com.br/",
+    technologies: ["Design", "Desenvolvimento", "UI/UX"],
   },
   {
-    name: "Nome do Projeto",
+    name: "Venda Conversando",
     category: "Landing Page",
     description:
-      "Página estratégica criada para campanha e captação de clientes.",
-    ratio: "4/3" as const,
-    url: "#",
-    technologies: ["Design", "Copy"],
+      "Landing page estratégica focada em conversão e automação de vendas via atendimento humanizado e conversacional.",
+    image: veconImg.url,
+    url: "https://vendaconversando.com.br/",
+    technologies: ["Landing Page", "Design", "Copywriting", "Desenvolvimento"],
   },
   {
-    name: "Nome do Projeto",
-    category: "Página de Vendas",
+    name: "Feil Muto Psicologia",
+    category: "Site Institucional",
     description:
-      "Experiência construída para apresentar uma oferta e conduzir à conversão.",
-    ratio: "16/10" as const,
-    url: "#",
-    technologies: ["UX", "Desenvolvimento"],
+      "Experiência digital acolhedora e minimalista para atendimento psicológico, unindo autoridade profissional e agendamento simplificado.",
+    image: feilmutoImg.url,
+    url: "https://feilmutopsicologia.com.br/",
+    technologies: ["Design", "Desenvolvimento", "UI/UX"],
   },
   {
-    name: "Nome do Projeto",
-    category: "Aplicação Web",
+    name: "Actore Teatro Empresarial",
+    category: "Site Institucional",
     description:
-      "Ferramenta digital acessível pelo navegador, pensada para o dia a dia.",
-    ratio: "4/3" as const,
-    url: "#",
-    technologies: ["Produto", "Desenvolvimento"],
+      "Portal institucional focado em apresentações corporativas, treinamentos e SIPAT, estruturado para transmitir impacto, credibilidade e fácil contato.",
+    image: actoreImg.url,
+    url: "https://www.actore.com.br/",
+    technologies: ["Design", "Desenvolvimento", "Site Institucional"],
   },
   {
-    name: "Nome do Projeto",
-    category: "Projeto Digital",
+    name: "Cadoreiki",
+    category: "Terapias Integrativas",
     description:
-      "Ideia transformada em experiência digital com design e tecnologia.",
-    ratio: "16/10" as const,
-    url: "#",
-    technologies: ["Estratégia", "Design"],
+      "Site sutil e envolvente focado em terapias integrativas e Reiki, criado para conectar clientes ao autocuidado com navegação intuitiva.",
+    image: cadoreikiImg.url,
+    url: "https://cadoreiki.com/",
+    technologies: ["Design", "Desenvolvimento", "UI/UX"],
   },
   {
-    name: "Nome do Projeto",
-    category: "Landing Page",
+    name: "AquiBarato",
+    category: "Plataforma Web",
     description:
-      "Página de alta performance para apresentar um serviço com clareza.",
-    ratio: "4/3" as const,
-    url: "#",
-    technologies: ["Design", "IA"],
+      "Vitrine digital e ecossistema de ofertas locais criado para conectar consumidores a promoções da sua região com navegação dinâmica.",
+    image: aquibaratoImg.url,
+    url: "https://aquibarato.com.br/",
+    technologies: ["Plataforma", "Desenvolvimento", "UI/UX", "Sistema"],
   },
 ];
 
@@ -77,18 +80,19 @@ function PortfolioCard({
   return (
     <Reveal delay={(index % 2) * 120}>
       <article className="group">
-        {/* Área da imagem — hover zoom suave.
-            Para usar imagem real: substitua o ImagePlaceholder por
-            <img className="aspect-[16/10] w-full rounded-2xl object-cover transition-transform duration-700 group-hover:scale-[1.04]" /> */}
-        <div className="overflow-hidden rounded-2xl shadow-[0_30px_60px_-30px_oklch(0_0_0/60%)]">
-          <div className="transition-transform duration-700 ease-out group-hover:scale-[1.04]">
-            <ImagePlaceholder
-              id={`portfolio-0${index + 1}`}
-              label={`Projeto ${String(index + 1).padStart(2, "0")} — ${project.category}`}
-              ratio={project.ratio}
-            />
-          </div>
-        </div>
+        <a
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block overflow-hidden rounded-2xl border border-line-dark shadow-[0_30px_60px_-30px_oklch(0_0_0/60%)]"
+        >
+          <img
+            src={project.image}
+            alt={`Prévia do projeto ${project.name}`}
+            loading="lazy"
+            className="aspect-[16/10] w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+          />
+        </a>
 
         <div className="mt-6 flex items-start justify-between gap-6">
           <div className="min-w-0">
@@ -114,6 +118,8 @@ function PortfolioCard({
           </div>
           <a
             href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
             className={cn(
               "mt-1 inline-flex shrink-0 items-center gap-1.5 text-[11px] font-extrabold tracking-[0.2em] text-foreground/70 uppercase",
               "transition-colors duration-300 hover:text-mint",
@@ -144,10 +150,10 @@ export function Portfolio() {
         </Reveal>
       </div>
 
-      {/* Grid editorial: razões alternadas criam ritmo visual */}
+      {/* Grid editorial */}
       <div className="mt-16 grid gap-x-10 gap-y-16 sm:grid-cols-2">
         {projects.map((project, i) => (
-          <div key={i} className={cn(i % 2 === 1 && "sm:mt-16")}>
+          <div key={project.name} className={cn(i % 2 === 1 && "sm:mt-16")}>
             <PortfolioCard project={project} index={i} />
           </div>
         ))}
