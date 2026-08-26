@@ -107,10 +107,11 @@ export function DraftToProduct() {
 
         <Reveal delay={200}>
           <div className="mt-14">
-            <ImagePlaceholder
-              id="wireframe-design-process"
-              label="Projeto em diferentes etapas de desenvolvimento"
-              ratio="16/9"
+            <img
+              src={processoAsset.url}
+              alt="Processo criativo: da ideia e wireframe ao protótipo e projeto final"
+              className="aspect-video w-full rounded-2xl border border-line-dark object-cover"
+              loading="lazy"
             />
           </div>
         </Reveal>

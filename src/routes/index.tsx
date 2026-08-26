@@ -70,7 +70,6 @@ function Index() {
       <Header />
       <main>
         <Hero />
-        <MarqueeBand />
         <Problem />
         <Solution />
         <Services />
