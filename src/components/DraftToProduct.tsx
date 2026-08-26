@@ -1,5 +1,5 @@
 import { Eyebrow, Section, SectionTitle } from "./Section";
-import { ImagePlaceholder } from "./ImagePlaceholder";
+import processoAsset from "../assets/processo-criativo.png.asset.json";
 import { Reveal } from "./Reveal";
 
 const stages = [

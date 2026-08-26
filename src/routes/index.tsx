@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { MarqueeBand } from "@/components/MarqueeBand";
 import { Problem } from "@/components/Problem";
 import { Solution } from "@/components/Solution";
 import { Services } from "@/components/Services";
