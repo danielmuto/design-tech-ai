@@ -73,11 +73,11 @@ export function Process() {
 
         <div className="lg:sticky lg:top-28 lg:self-start">
           <Reveal delay={200}>
-            <ImagePlaceholder
-              id="process-workspace"
-              label="Processo criativo / workspace de design"
-              ratio="16/9"
-              tone="light"
+            <img
+              src={processoAsset.url}
+              alt="Processo de criação: conversa, estratégia, design, desenvolvimento e publicação"
+              className="aspect-video w-full rounded-2xl border border-line-light object-cover"
+              loading="lazy"
             />
           </Reveal>
           <Reveal delay={300}>
