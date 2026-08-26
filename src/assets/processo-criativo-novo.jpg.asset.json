@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "34363011-e7ba-439d-8ddc-dc0eeb6abc15",
-  "project_id": "de9ef29b-45b4-4cec-8278-508c5d4dd630",
-  "url": "/__l5e/assets-v1/34363011-e7ba-439d-8ddc-dc0eeb6abc15/processo-criativo-novo.jpg",
-  "r2_key": "a/v1/de9ef29b-45b4-4cec-8278-508c5d4dd630/34363011-e7ba-439d-8ddc-dc0eeb6abc15/processo-criativo-novo.jpg",
-  "original_filename": "processo-criativo-novo.jpg",
-  "size": 387106,
   "content_type": "image/jpeg",
-  "created_at": "2026-08-26T03:24:38Z"
+  "created_at": "2026-08-26T03:24:38Z",
+  "original_filename": "processo-criativo-novo.jpg",
+  "project_id": "26b207b6-bd64-4ffd-954c-24b6aed0ac78",
+  "r2_key": "a/v1/26b207b6-bd64-4ffd-954c-24b6aed0ac78/34363011-e7ba-439d-8ddc-dc0eeb6abc15/processo-criativo-novo.jpg",
+  "size": 387106,
+  "url": "/__l5e/assets-v1/34363011-e7ba-439d-8ddc-dc0eeb6abc15/processo-criativo-novo.jpg",
+  "version": 1
 }

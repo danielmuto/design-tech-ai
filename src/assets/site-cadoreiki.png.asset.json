@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "00909cf1-d8b1-4c0b-a9cf-522eadd2e3db",
-  "project_id": "de9ef29b-45b4-4cec-8278-508c5d4dd630",
-  "url": "/__l5e/assets-v1/00909cf1-d8b1-4c0b-a9cf-522eadd2e3db/site-cadoreiki.png",
-  "r2_key": "a/v1/de9ef29b-45b4-4cec-8278-508c5d4dd630/00909cf1-d8b1-4c0b-a9cf-522eadd2e3db/site-cadoreiki.png",
-  "original_filename": "site-cadoreiki.png",
-  "size": 1197093,
   "content_type": "image/png",
-  "created_at": "2026-08-26T02:33:02Z"
+  "created_at": "2026-08-26T02:33:02Z",
+  "original_filename": "site-cadoreiki.png",
+  "project_id": "26b207b6-bd64-4ffd-954c-24b6aed0ac78",
+  "r2_key": "a/v1/26b207b6-bd64-4ffd-954c-24b6aed0ac78/00909cf1-d8b1-4c0b-a9cf-522eadd2e3db/site-cadoreiki.png",
+  "size": 1197093,
+  "url": "/__l5e/assets-v1/00909cf1-d8b1-4c0b-a9cf-522eadd2e3db/site-cadoreiki.png",
+  "version": 1
 }

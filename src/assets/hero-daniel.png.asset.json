@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "3ce8ea1d-3b0e-4925-b06f-ab069eb0f4be",
-  "project_id": "de9ef29b-45b4-4cec-8278-508c5d4dd630",
-  "url": "/__l5e/assets-v1/3ce8ea1d-3b0e-4925-b06f-ab069eb0f4be/hero-daniel.png",
-  "r2_key": "a/v1/de9ef29b-45b4-4cec-8278-508c5d4dd630/3ce8ea1d-3b0e-4925-b06f-ab069eb0f4be/hero-daniel.png",
-  "original_filename": "hero-daniel.png",
-  "size": 1938570,
   "content_type": "image/png",
-  "created_at": "2026-08-26T02:32:50Z"
+  "created_at": "2026-08-26T02:32:50Z",
+  "original_filename": "hero-daniel.png",
+  "project_id": "26b207b6-bd64-4ffd-954c-24b6aed0ac78",
+  "r2_key": "a/v1/26b207b6-bd64-4ffd-954c-24b6aed0ac78/3ce8ea1d-3b0e-4925-b06f-ab069eb0f4be/hero-daniel.png",
+  "size": 1938570,
+  "url": "/__l5e/assets-v1/3ce8ea1d-3b0e-4925-b06f-ab069eb0f4be/hero-daniel.png",
+  "version": 1
 }
