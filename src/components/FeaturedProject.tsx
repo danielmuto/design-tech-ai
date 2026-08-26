@@ -1,7 +1,8 @@
 import { ArrowUpRight } from "lucide-react";
 import { Eyebrow, Section, SectionTitle } from "./Section";
-import { ImagePlaceholder } from "./ImagePlaceholder";
+import featuredProjectAsset from "@/assets/featured-project-burger-house.png.asset.json";
 import { Reveal } from "./Reveal";
+
 
 const disciplines = ["Design", "UX", "Desenvolvimento"];
 
@@ -18,19 +19,17 @@ export function FeaturedProject() {
         </SectionTitle>
       </div>
 
-      {/* Mockup principal — para imagem real, substitua por
-          <img className="aspect-video w-full rounded-2xl object-cover" /> */}
       <Reveal delay={200}>
         <div className="mt-14">
-          <ImagePlaceholder
-            id="featured-project-mockup"
-            label="Mockup principal — notebook / múltiplas telas"
-            ratio="16/9"
-            tone="light"
-            className="shadow-[0_50px_100px_-40px_oklch(0.212_0.042_247.8/35%)]"
+          <img
+            src={featuredProjectAsset.url}
+            alt="Mockup responsivo do projeto Burger House em notebook e smartphone"
+            className="aspect-video w-full rounded-2xl border border-line-light object-cover shadow-[0_50px_100px_-40px_oklch(0.212_0.042_247.8/35%)]"
+            loading="lazy"
           />
         </div>
       </Reveal>
+
 
       <Reveal delay={300}>
         <div className="mt-10 flex flex-col items-center justify-between gap-6 sm:flex-row">
