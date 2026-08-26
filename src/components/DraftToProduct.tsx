@@ -109,7 +109,7 @@ export function DraftToProduct() {
           <div className="mt-14">
             <img
               src={processoAsset.url}
-              alt="Processo criativo: da ideia e wireframe ao protótipo e projeto final"
+              alt="Processo de criação: conversa, estratégia, design, desenvolvimento e publicação"
               className="aspect-video w-full rounded-2xl border border-line-dark object-cover"
               loading="lazy"
             />
