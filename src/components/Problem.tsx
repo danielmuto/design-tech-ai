@@ -1,5 +1,5 @@
 import { Eyebrow, Section, SectionTitle } from "./Section";
-import { ImagePlaceholder } from "./ImagePlaceholder";
+import problemaAsset from "../assets/problema-hamburgueria.jpg.asset.json";
 import { Reveal } from "./Reveal";
 
 export function Problem() {
