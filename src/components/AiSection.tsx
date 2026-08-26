@@ -1,6 +1,7 @@
 import { Eyebrow, Section, SectionTitle } from "./Section";
-import { ImagePlaceholder } from "./ImagePlaceholder";
+import aiImageAsset from "@/assets/ai-section-composicao.jpg.asset.json";
 import { Reveal } from "./Reveal";
+
 
 const flow = ["Ideia", "IA", "Design", "Produto"];
 

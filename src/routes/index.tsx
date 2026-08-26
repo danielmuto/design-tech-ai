@@ -11,8 +11,8 @@ import { AiSection } from "@/components/AiSection";
 import { About } from "@/components/About";
 import { Process } from "@/components/Process";
 import { ForWhom } from "@/components/ForWhom";
-import { Testimonials } from "@/components/Testimonials";
 import { Faq } from "@/components/Faq";
+
 import { FinalCta } from "@/components/FinalCta";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { Footer } from "@/components/Footer";
