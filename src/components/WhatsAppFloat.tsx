@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { whatsappUrl } from "@/lib/site";
 
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -13,15 +14,38 @@ function WhatsAppIcon({ className }: { className?: string }) {
   );
 }
 
-/** Botão flutuante do WhatsApp */
+/** Botão flutuante do WhatsApp — aparece somente depois da Hero. */
 export function WhatsAppFloat() {
+  const [heroVisible, setHeroVisible] = useState(true);
+
+  useEffect(() => {
+    const hero = document.getElementById("top");
+
+    if (!hero) {
+      setHeroVisible(false);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setHeroVisible(entry.isIntersecting),
+      { threshold: 0.05 },
+    );
+
+    observer.observe(hero);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <a
       href={whatsappUrl()}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar com Daniel no WhatsApp"
-      className="group fixed right-5 bottom-5 z-50 flex items-center gap-3 rounded-full bg-mint py-3 pr-5 pl-4 text-primary-foreground shadow-[0_16px_40px_-12px_var(--mint)] transition-all duration-300 hover:shadow-[0_16px_48px_-8px_var(--mint)] sm:right-8 sm:bottom-8"
+      className={`group fixed right-5 bottom-5 z-50 flex items-center gap-3 rounded-full bg-mint py-3 pr-5 pl-4 text-primary-foreground shadow-[0_16px_40px_-12px_var(--mint)] transition-all duration-500 hover:shadow-[0_16px_48px_-8px_var(--mint)] sm:right-8 sm:bottom-8 ${
+        heroVisible
+          ? "pointer-events-none translate-y-5 opacity-0"
+          : "pointer-events-auto translate-y-0 opacity-100"
+      }`}
     >
       <WhatsAppIcon className="size-6" />
       <span className="text-[13px] font-extrabold tracking-wide">
