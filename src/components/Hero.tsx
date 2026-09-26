@@ -30,7 +30,7 @@ export function Hero() {
           <Reveal>
             <p className="flex items-center gap-3 text-[11px] font-bold tracking-[0.3em] text-mint uppercase">
               <span aria-hidden="true" className="h-px w-8 bg-mint/70" />
-              Web Design • IA • Experiências Digitais
+              Web Design • IA • Experiências Digitais • TESTE
             </p>
           </Reveal>
 
