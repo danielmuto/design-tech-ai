@@ -128,8 +128,7 @@ export function Hero() {
 
             <Reveal delay={120}>
               <h1 className="mt-7 text-[13.5vw] leading-[0.98] font-extrabold tracking-tight text-balance text-foreground sm:text-6xl lg:text-7xl xl:text-[5.2rem]">
-                Sua ideia merece sair da imaginação e ganhar vida no{" "}
-                <span className="text-gradient-mint">digital.</span>
+                teste
               </h1>
             </Reveal>
 
